@@ -1,13 +1,24 @@
-# Data Engineering Test - Instructions:
+## Data Engineering Test 
+### Instructions:
 
 To execute the test, follow the instructions below:
+
 1 - Make sure you have Docker installed on your system.
+
 2 - Open a terminal or command prompt.
+
 3 - Navigate to the directory where the file is located.
+
 4 - Build the Docker image by running the following command: docker-compose up
+
 5 - To access the container's terminal, execute the following command:docker exec -it <nome_do_contêiner> bash (Replace <container_name> with the name of the container where the file you want to execute is located. You can check the names of the running containers using the docker ps command.)
+
 6 - To generate the requested DataFrame in the test, execute the following command: spark-submit app/src/councils_job.py. The first 20 lines of the DataFrame will be display and the transform.csv file will be saved in the app/data/output directory.
+
 7 - To run the unit tests, execute the following command: spark-submit /app/test/test_councils_job.py
+
+
+Docker image = https://hub.docker.com/r/bitnami/spark/
 
 -------------------------------------------------------------------------------------------------
 

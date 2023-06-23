@@ -13,9 +13,9 @@ To execute the test, follow the instructions below:
 
 5 - To access the container's terminal, execute the following command:docker exec -it <nome_do_contêiner> bash (Replace <container_name> with the name of the container where the file you want to execute is located. You can check the names of the running containers using the docker ps command.)
 
-6 - To generate the requested DataFrame in the test, execute the following command: spark-submit app/src/councils_job.py. The first 20 lines of the DataFrame will be display and the transform.csv file will be saved in the app/data/output directory.
+6 - To generate the requested DataFrame in the test, execute the following command: spark-submit src/councils_job.py. The first 20 lines of the DataFrame will be display and the transform.csv file will be saved in the app/data/output directory.
 
-7 - To run the unit tests, execute the following command: spark-submit /app/test/test_councils_job.py
+7 - To run the unit tests, execute the following command: spark-submit test/test_councils_job.py
 
 
 Docker image = https://hub.docker.com/r/bitnami/spark/
